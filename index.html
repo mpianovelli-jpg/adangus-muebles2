@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&amp;family=Mulish:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; text-decoration: none; }
+  button { font: inherit; margin: 0; }
+  ::selection { background: #b9741f; color: #fff8ec; }
+  @keyframes adFade { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+</style>
+</helmet>
+
+<div style="font-family: Mulish, -apple-system, sans-serif; color: #2a2118; background: #f4ebdc; min-height: 100vh; overflow-x: hidden;">
+
+  <!-- ===================== HEADER ===================== -->
+  <header style="position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: rgba(244,235,220,0.92); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(42,33,24,0.12);">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap;">
+      <button onClick="{{ goInicio }}" style="display: flex; align-items: center; background: none; border: none; cursor: pointer; padding: 0;">
+        
+      <img src="assets/logo-lockup.png" alt="ADANGUS Muebles" style="height: 64px; width: 195px; object-fit: contain; display: block"></button>
+
+      <nav style="display: flex; align-items: center; gap: 4px; flex-wrap: wrap;">
+        <sc-for list="{{ navItems }}" as="item" hint-placeholder-count="4">
+          <button onClick="{{ item.onClick }}" style="{{ item.style }}">{{ item.label }}</button>
+        </sc-for>
+        <a href="{{ waMain }}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; background: #21392c; color: #f4ebdc; padding: 11px 18px; border-radius: 2px; font-weight: 700; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; margin-left: 8px;" style-hover="background: #172a20;">
+          <span style="width: 8px; height: 8px; border-radius: 50%; background: #6fcf7f; display: inline-block;"></span>
+          WhatsApp
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="ad-header-spacer" style="height: 92px;"></div>
+
+  <main>
+
+  <!-- ===================== INICIO ===================== -->
+  <sc-if value="{{ isInicio }}" hint-placeholder-val="{{ true }}">
+  <div>
+
+    <!-- HERO -->
+    <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); align-items: stretch; background: #21392c;">
+      <div style="padding: clamp(48px, 6vw, 92px) clamp(28px, 5vw, 72px); display: flex; flex-direction: column; justify-content: center; max-width: 640px; margin-left: auto; width: 100%;">
+        <span style="display: inline-flex; align-items: center; gap: 10px; font-size: 11px; font-weight: 700; letter-spacing: 0.34em; text-transform: uppercase; color: #cf9a4a; margin-bottom: 26px;">
+          <span style="width: 26px; height: 1px; background: rgb(185, 116, 31);"></span>DESDE 1970 - MUEBLERÍA ARTESANAL</span>
+        <h1 style="font-family: 'Spectral', serif; font-weight: 600; font-size: clamp(38px, 5.4vw, 62px); line-height: 1.04; color: #f6efe1; margin: 0 0 24px; text-wrap: balance;">
+          Muebles de madera real, hechos para durar generaciones.
+        </h1>
+        <p style="font-size: clamp(15px, 1.6vw, 17px); line-height: 1.7; color: #cdd6c9; margin: 0 0 36px; max-width: 50ch;"><span style="font-weight: normal;"><b>Fabricamos</b> y </span><strong data-start="0" data-end="105" data-is-only-node="" style="font-size: clamp(15px, 1.6vw, 17px);">restauramos<span style="font-weight: normal;"> sillas, sillones, mesas, mecedoras y taburetes en madera de guatambú.</span></strong><span style="font-size: clamp(15px, 1.6vw, 17px);"> <br>Sin aglomerados ni enchapados: solo la <b>resistencia</b>, la <b>calidez</b> y la <b>belleza</b> de la madera natural.</span></p><div class="qMYqUG_convSearchResultHighlightRoot"><div class="" data-turn-id-container="request-WEB:6fd28178-fd69-4588-8a67-af399e614c02-38" data-is-intersecting="true"><section class="text-token-text-primary w-full focus:outline-none has-data-writing-block:pointer-events-none [&amp;:has([data-writing-block])&gt;*]:pointer-events-auto R6Vx5W_threadScrollVars scroll-mb-[calc(var(--scroll-root-safe-area-inset-bottom,0px)+var(--thread-response-height))] scroll-mt-[calc(var(--header-height)+min(200px,max(70px,20svh)))]" dir="auto" data-turn-id="request-WEB:6fd28178-fd69-4588-8a67-af399e614c02-38" data-turn-id-container="request-WEB:6fd28178-fd69-4588-8a67-af399e614c02-38" data-testid="conversation-turn-4" data-scroll-anchor="false" data-turn="assistant"><div class="text-base my-auto mx-auto pb-10 [--thread-content-margin:var(--thread-content-margin-xs,calc(var(--spacing)*4))] @w-sm/main:[--thread-content-margin:var(--thread-content-margin-sm,calc(var(--spacing)*6))] @w-lg/main:[--thread-content-margin:var(--thread-content-margin-lg,calc(var(--spacing)*16))] px-(--thread-content-margin)"><div data-conversation-screenshot-content="" class="[--thread-content-max-width:40rem] @w-lg/main:[--thread-content-max-width:48rem] mx-auto max-w-(--thread-content-max-width) flex-1 group/turn-messages focus-visible:outline-hidden relative flex w-full min-w-0 flex-col agent-turn"><div class="z-0 flex min-h-[46px] justify-start"></div><div class="mt-3 w-full empty:hidden"><div class="text-center"></div></div></div></div></section></div></div><div aria-hidden="true" class="pointer-events-none -mt-px h-px translate-y-[calc(var(--scroll-root-safe-area-inset-bottom)-14*var(--spacing))]"></div><p></p>
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <button onClick="{{ goProductos }}" style="display: inline-flex; align-items: center; gap: 9px; background: #b9741f; color: #fff8ec; padding: 15px 30px; border: none; border-radius: 2px; font-weight: 700; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer;" style-hover="background: #a5641a;">Ver productos →</button>
+          <a href="{{ waMain }}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 9px; background: transparent; color: #f4ebdc; padding: 15px 28px; border: 1px solid rgba(244,235,220,0.45); border-radius: 2px; font-weight: 700; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase;" style-hover="border-color: #f4ebdc;">Pedir asesoramiento</a>
+        </div>
+      </div><div style="min-height: 360px; background-image: url('assets/hero-windsor.png'); background-size: cover; background-position: center; background-color: #f3efe7;"></div>
+      
+    </section>
+
+    <!-- VALORES -->
+    <section style="max-width: 1180px; margin: 0 auto; padding: clamp(56px, 7vw, 92px) 24px;">
+      <div style="text-align: center; max-width: 620px; margin: 0 auto 52px;">
+        <span style="font-size: 11px; font-weight: 700; letter-spacing: 0.32em; text-transform: uppercase; color: #b9741f;">Por qué elegirnos</span>
+        <h2 style="font-family: 'Spectral', serif; font-weight: 600; font-size: clamp(28px, 3.6vw, 42px); color: #21392c; margin: 14px 0 0; line-height: 1.12;">La calidad de antes, para los espacios de hoy</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1px; background: rgba(42,33,24,0.12); border: 1px solid rgba(42,33,24,0.12);">
+        <sc-for list="{{ valores }}" as="item" hint-placeholder-count="4">
+          <div style="background: #faf4e9; padding: 34px 28px;">
+            <div style="font-family: 'Spectral', serif; font-size: 30px; color: #b9741f; margin-bottom: 14px;">{{ item.num }}</div>
+            <h3 style="font-size: 17px; font-weight: 800; color: #21392c; margin: 0 0 9px; letter-spacing: 0.01em;">{{ item.title }}</h3>
+            <p style="font-size: 14px; line-height: 1.6; color: #6b5f4e; margin: 0;">{{ item.text }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <!-- LINEAS / CATEGORIAS -->
+    <section style="background: #ece0cd; padding: clamp(56px, 7vw, 90px) 24px;">
+      <div style="max-width: 1180px; margin: 0 auto;">
+        <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-bottom: 40px;">
+          <div>
+            <span style="font-size: 11px; font-weight: 700; letter-spacing: 0.32em; text-transform: uppercase; color: #b9741f;">Nuestras líneas</span>
+            <h2 style="font-family: 'Spectral', serif; font-weight: 600; font-size: clamp(28px, 3.6vw, 42px); color: #21392c; margin: 14px 0 0; line-height: 1.1;">Modelos clásicos, hechos a mano</h2>
+          </div>
+          <button onClick="{{ goProductos }}" style="background: none; border: none; color: #b9741f; font-weight: 700; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer; padding: 6px 0; border-bottom: 1px solid #b9741f;">Ver catálogo completo →</button>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 18px;">
+          <sc-for list="{{ catCards }}" as="item" hint-placeholder-count="5">
+            <button onClick="{{ item.onClick }}" style="display: block; text-align: left; background: #faf4e9; border: 1px solid rgba(42,33,24,0.1); border-radius: 3px; overflow: hidden; cursor: pointer; padding: 0;" style-hover="border-color: #b9741f;">
+              <div style="aspect-ratio: 3/4; background-image: url('{{ item.img }}'); background-size: cover; background-repeat: no-repeat; background-position: center; background-color: #e9ddc9;"></div>
+              <div style="padding: 16px 18px; display: flex; align-items: center; justify-content: space-between; gap: 8px;">
+                <span style="font-family: 'Spectral', serif; font-weight: 600; font-size: 21px; color: #21392c;">{{ item.name }}</span>
+                <span style="color: #b9741f; font-size: 18px;">→</span>
+              </div>
+            </button>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS TEASER -->
+    <section style="background: #21392c; padding: clamp(56px, 7vw, 90px) 24px;">
+      <div style="max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(36px, 5vw, 72px); align-items: center;">
+        <div>
+          <span style="font-size: 11px; font-weight: 700; letter-spacing: 0.32em; text-transform: uppercase; color: #cf9a4a;">ADEMÁS DE FABRICAR, RESTAURAMOS</span>
+          <h2 style="font-family: 'Spectral', serif; font-weight: 600; font-size: clamp(28px, 3.6vw, 42px); color: #f6efe1; margin: 14px 0 18px; line-height: 1.1;">Le devolvemos la vida a tus muebles</h2>
+          <p style="font-size: 16px; line-height: 1.7; color: #cdd6c9; margin: 0 0 30px; max-width: 46ch;">Restauración, reparaciones, encolado, lustrado, tapizado y pintado. Tratamos cada pieza —nueva o heredada— con el cuidado de un oficio de toda la vida.</p>
+          <button onClick="{{ goServicios }}" style="display: inline-flex; align-items: center; gap: 9px; background: #b9741f; color: #fff8ec; padding: 14px 28px; border: none; border-radius: 2px; font-weight: 700; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer;" style-hover="background: #a5641a;">Ver servicios →</button>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px;">
+          <sc-for list="{{ servicios }}" as="item" hint-placeholder-count="6">
+            <button onClick="{{ goServicios }}" style="text-align: left; cursor: pointer; background: rgba(244,235,220,0.04); border: 1px solid rgba(233,201,142,0.22); border-radius: 4px; padding: 22px 20px; display: flex; flex-direction: column; gap: 10px; transition: all .18s;" style-hover="background: rgba(233,201,142,0.1); border-color: rgba(233,201,142,0.5);">
+              <span style="font-family: 'Spectral', serif; font-size: 15px; font-weight: 700; color: #cf9a4a; letter-spacing: 0.04em;">{{ item.num }}</span>
+              <span style="font-family: 'Spectral', serif; font-size: 22px; font-weight: 600; color: #f6efe1; line-height: 1.05;">{{ item.title }}</span>
+              <span style="font-size: 12.5px; line-height: 1.5; color: #9fb0a2;">{{ item.short }}</span>
+            </button>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA CONTACTO -->
+    <section style="max-width: 1180px; margin: 0 auto; padding: clamp(56px, 7vw, 90px) 24px; text-align: center;">
+      <img src="assets/logo-star.png" alt="" style="width: 58px; height: 58px; object-fit: contain; margin: 0 auto 24px;">
+      <h2 style="font-family: 'Spectral', serif; font-weight: 600; font-size: clamp(30px, 4.4vw, 50px); color: #21392c; margin: 0 0 16px; line-height: 1.08; text-wrap: balance;">¿Buscás un mueble que dure toda la vida?</h2>
+      <p style="font-size: 16px; line-height: 1.7; color: #6b5f4e; margin: 0 auto 34px; max-width: 50ch;">Escribinos por WhatsApp y te asesoramos sobre modelos, medidas, tonos y tiempos de entrega. Estamos en Morón, Provincia de Buenos Aires.</p>
+      <div style="display: flex; gap: 14px; flex-wrap: wrap; justify-content: center;">
+        <a href="{{ waMain }}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 9px; background: #21392c; color: #f4ebdc; padding: 15px 32px; border-radius: 2px; font-weight: 700; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase;" style-hover="background: #172a20;"><span style="width: 8px; height: 8px; border-radius: 50%; background: #6fcf7f;"></span>Escribinos por WhatsApp</a>
+        <button onClick="{{ goContacto }}" style="display: inline-flex; align-items: center; gap: 9px; background: transparent; color: #21392c; padding: 15px 30px; border: 1px solid rgba(42,33,24,0.3); border-radius: 2px; font-weight: 700; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer;" style-hover="border-color: #21392c;">Ver datos de contacto</button>
+      </div>
+    </section>
+
+  </div>
+  </sc-if>
+
+  <!-- ===================== PRODUCTOS ===================== -->
+  <sc-if value="{{ isProductos }}" hint-placeholder-val="{{ false }}">
+  <div>
+    <section style="background: #21392c; padding: clamp(44px, 6vw, 76px) 24px;">
+      <div style="max-width: 1180px; margin: 0 auto;">
+        <span style="font-size: 11px; font-weight: 700; letter-spacing: 0.32em; text-transform: uppercase; color: #cf9a4a;">Catálogo</span>
+        <h1 style="font-family: 'Spectral', serif; font-weight: 600; font-size: clamp(34px, 5vw, 56px); color: #f6efe1; margin: 12px 0 16px; line-height: 1.05;">Nuestros productos</h1>
+        <p style="font-size: 16px; line-height: 1.7; color: #cdd6c9; margin: 0; max-width: 56ch;">Todas nuestras piezas son de guatambú, torneadas y terminadas a mano. Disponibles en distintos tonos de lustre.</p>
+      </div>
+    </section>
+
+    <!-- LUSTRES A ELECCIÓN -->
+    <section style="background: #ece0cd; padding: clamp(30px, 3.6vw, 44px) 24px; border-bottom: 1px solid rgba(42,33,24,0.08);">
+      <div style="max-width: 1180px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: clamp(24px, 4vw, 56px); flex-wrap: wrap;">
+        <div style="max-width: 50ch;">
+          <span style="font-size: 11px; font-weight: 800; letter-spacing: 0.24em; text-transform: uppercase; color: #b9741f;">Terminaciones a elección</span>
+          <h2 style="font-family: 'Spectral', serif; font-weight: 600; font-size: clamp(22px, 2.8vw, 32px); color: #21392c; margin: 12px 0 10px; line-height: 1.12; width: 610px; height: 40px">Elegí el lustre o pintura de tu mueble</h2>
+          <p style="font-size: 14.5px; line-height: 1.65; color: #6b5f4e; margin: 0;">Cualquiera de nuestros modelos se fabrica en el tono que prefieras, sin costo adicional. Solo indicanos el lustre al hacer tu pedido.</p>
+        </div>
+        <div style="display: flex; gap: clamp(16px, 2.4vw, 28px); flex-wrap: wrap;">
+          <sc-for list="{{ lustres }}" as="l" hint-placeholder-count="5">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+              <span style="{{ l.swatch }}"></span>
+              <span style="font-size: 11.5px; font-weight: 700; letter-spacing: 0.03em; color: #5f5446; white-space: nowrap;">{{ l.name }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+
+    <section style="max-width: 1180px; margin: 0 auto; padding: clamp(36px, 4vw, 56px) 24px clamp(56px, 7vw, 90px);">
+      <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 38px;">
+        <sc-for list="{{ catList }}" as="item" hint-placeholder-count="6">
+          <button onClick="{{ item.onClick }}" style="{{ item.style }}">{{ item.label }}</button>
+        </sc-for>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 24px;">
+        <sc-for list="{{ filtered }}" as="item" hint-placeholder-count="8">
+          <div style="background: #faf4e9; border: 1px solid rgba(42,33,24,0.1); border-radius: 3px; overflow: hidden; display: flex; flex-direction: column;">
+            <button onClick="{{ item.openImg }}" aria-label="Ver foto más grande" style="aspect-ratio: 3/4; background-image: url('{{ item.img }}'); background-size: cover; background-repeat: no-repeat; background-position: center; background-color: #e9ddc9; border: none; padding: 0; margin: 0; width: 100%; display: block; cursor: zoom-in;"></button>
+            <div style="padding: 20px 20px 22px; display: flex; flex-direction: column; flex: 1;">
+              <span style="font-size: 10px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: #b9741f; margin-bottom: 7px;">{{ item.cat }}</span>
+              <h3 style="font-family: 'Spectral', serif; font-weight: 600; font-size: 24px; color: #21392c; margin: 0 0 8px; line-height: 1.1;">{{ item.name }}</h3>
+              <p style="font-size: 13.5px; line-height: 1.55; color: #6b5f4e; margin: 0 0 16px; flex: 1;">{{ item.desc }}</p>
+              <div style="display: flex; align-items: center; gap: 7px; margin: 0 0 10px;">
+                <span style="font-size: 11px; color: #6b5f4e;">En esta foto:</span>
+                <span style="{{ item.finishDot }}"></span>
+                <span style="font-size: 12.5px; font-weight: 700; color: #21392c;">{{ item.finish }}</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 9px; margin: 0 0 16px;">
+                <span style="font-size: 10px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: #9b8f7d;">Lustres</span>
+                <div style="display: flex; gap: 5px;">
+                  <sc-for list="{{ lustres }}" as="l" hint-placeholder-count="5">
+                    <span title="{{ l.name }}" style="{{ l.dot }}"></span>
+                  </sc-for>
+                </div>
+                <span style="font-size: 11px; color: #9b8f7d; margin-left: 1px;">a elección</span>
+              </div>
+              <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; padding-top: 16px; border-top: 1px solid rgba(42,33,24,0.1);">
+                <span style="display: flex; flex-direction: column; line-height: 1;"><span style="font-size: 9px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #9b8f7d; margin-bottom: 3px;">Precio</span><span style="font-family: 'Spectral', serif; font-size: 18px; font-weight: 600; color: #21392c">{{ item.priceFmt }}</span></span>
+                <a href="{{ item.wa }}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 7px; background: #21392c; color: #f4ebdc; padding: 9px 16px; border-radius: 2px; font-weight: 700; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;" style-hover="background: #b9741f;"><span style="width: 7px; height: 7px; border-radius: 50%; background: #6fcf7f;"></span>Consultar</a>
+              </div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+  </div>
+  </sc-if>
+
+  <!-- ===================== SERVICIOS ===================== -->
+  <sc-if value="{{ isServicios }}" hint-placeholder-val="{{ false }}">
+  <div>
+    <section style="background: #f4ebdc; padding: clamp(54px, 7vw, 96px) 24px;">
+      <div style="max-width: 1180px; margin: 0 auto;">
+
+        <div style="text-align: center; max-width: 760px; margin: 0 auto clamp(40px, 5vw, 62px);">
+          <span style="font-size: 12px; font-weight: 800; letter-spacing: 0.34em; text-transform: uppercase; color: #b9741f;">Nuestros servicios</span>
+          <h1 style="font-family: 'Spectral', serif; font-weight: 600; font-size: clamp(32px, 5vw, 56px); color: #21392c; margin: 18px 0 18px; line-height: 1.05; text-wrap: balance;">Restauramos la esencia.<br>Renovamos lo que importa.</h1>
+          <p style="font-size: clamp(15px, 1.7vw, 18px); line-height: 1.6; color: #4f6051; margin: 0 auto; max-width: 46ch;">Ofrecemos soluciones artesanales para devolverle vida, belleza y funcionalidad a tus muebles de madera.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px;">
+          <sc-for list="{{ servicios }}" as="item" hint-placeholder-count="6">
+            <div style="background: #efe6d4; border: 1px solid rgba(42,33,24,0.08); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column;">
+              <div style="aspect-ratio: 16 / 10; background-image: url('{{ item.img }}'); background-size: cover; background-position: center; background-color: #e2d6bf;"></div>
+              <div style="padding: 24px 26px 28px; display: flex; gap: 16px; align-items: flex-start;">
+                <div style="flex: 0 0 auto; width: 50px; height: 50px; border-radius: 50%; background: #e4d6bd; display: flex; align-items: center; justify-content: center; font-family: 'Spectral', serif; font-size: 19px; font-weight: 600; color: #b9741f;">{{ item.num }}</div>
+                <div>
+                  <h3 style="font-family: 'Spectral', serif; font-weight: 600; font-size: 22px; color: #21392c; margin: 7px 0 9px; line-height: 1.05;">{{ item.title }}</h3>
+                  <p style="font-size: 14px; line-height: 1.6; color: #6b5f4e; margin: 0;">{{ item.text }}</p>
+                </div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+
+        <div style="margin-top: clamp(34px, 5vw, 54px); background: #ece0cd; border-radius: 12px; padding: clamp(30px, 4vw, 44px) clamp(28px, 5vw, 54px); display: flex; align-items: center; justify-content: space-between; gap: 28px; flex-wrap: wrap;">
+          <div style="display: flex; align-items: center; gap: 22px;">
+            <div style="flex: 0 0 auto; width: 62px; height: 62px; border-radius: 50%; background: #e0d2b8; display: flex; align-items: center; justify-content: center;">
+              <div style="position: relative; width: 32px; height: 24px; border: 2px solid #8a6a3a; border-radius: 6px;">
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 12px; height: 12px; border: 2px solid #8a6a3a; border-radius: 50%;"></div>
+                <div style="position: absolute; top: -6px; left: 8px; width: 10px; height: 5px; background: #8a6a3a; border-radius: 2px 2px 0 0;"></div>
+              </div>
+            </div>
+            <div>
+              <h2 style="font-family: 'Spectral', serif; font-weight: 600; font-size: clamp(22px, 2.6vw, 30px); color: #21392c; margin: 0 0 8px; line-height: 1.1;">Contanos qué necesitás restaurar</h2>
+              <p style="font-size: 15px; line-height: 1.6; color: #6b5f4e; margin: 0; max-width: 46ch;">Mandanos una foto del mueble por WhatsApp y te pasamos un presupuesto sin compromiso.</p>
+            </div>
+          </div>
+          <a href="{{ waServicio }}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; background: #21392c; color: #f4ebdc; padding: 16px 32px; border-radius: 3px; font-weight: 800; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap;" style-hover="background: #172a20;"><span style="width: 9px; height: 9px; border-radius: 50%; background: #6fcf7f;"></span>Pedir presupuesto</a>
+        </div>
+
+      </div>
+    </section>
+  </div>
+  </sc-if>
+
+  <!-- ===================== PROYECTOS ===================== -->
+  <sc-if value="{{ isProyectos }}" hint-placeholder-val="{{ false }}">
+  <div>
+    <section style="background: #21392c; padding: clamp(44px, 6vw, 76px) 24px;">
+      <div style="max-width: 1180px; margin: 0 auto;">
+        <span style="font-size: 11px; font-weight: 700; letter-spacing: 0.32em; text-transform: uppercase; color: #cf9a4a;">Trabajos realizados</span>
+        <h1 style="font-family: 'Spectral', serif; font-weight: 600; font-size: clamp(34px, 5vw, 56px); color: #f6efe1; margin: 12px 0 16px; line-height: 1.05;">Proyectos</h1>
+        <p style="font-size: 16px; line-height: 1.7; color: #cdd6c9; margin: 0; max-width: 60ch;">Muebles que salieron de nuestro taller y hoy son parte del día a día de cada hogar. Acá mostramos cómo quedan las piezas una vez instaladas, en las casas de nuestros clientes.</p>
+      </div>
+    </section>
+
+    <section style="background: #f5efe2; padding: clamp(44px, 6vw, 80px) 24px;">
+      <div style="max-width: 1180px; margin: 0 auto;">
+
+        <!-- PROYECTO 1 -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); background: #ece2cf; border: 1px solid rgba(42,33,24,0.08); border-radius: 12px; overflow: hidden; margin-bottom: 24px;">
+          <div style="aspect-ratio: 4 / 3; min-height: 300px; background-image: url('assets/proyectos/cocina-taburetes.png'); background-size: cover; background-position: center; background-color: #e9ddc9;"></div>
+          <div style="padding: clamp(30px, 4vw, 54px); display: flex; flex-direction: column; justify-content: center;">
+            <span style="font-size: 11px; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: #b9741f; margin-bottom: 14px;">Entrega · Cocina</span>
+            <h2 style="font-family: 'Spectral', serif; font-weight: 600; font-size: clamp(26px, 3vw, 36px); color: #21392c; margin: 0 0 16px; line-height: 1.08;">Taburetes para una isla de cocina</h2>
+            <p style="font-size: 15.5px; line-height: 1.75; color: #6b5f4e; margin: 0; max-width: 46ch;">Un juego de taburetes altos en guatambú macizo, tono natural, hechos a la medida justa de la barra. Apoyapiés reforzado y terminación lustrada para el uso diario en familia. Así quedaron instalados en la cocina de nuestros clientes.</p>
+            <div style="margin-top: 24px; padding-top: 18px; border-top: 1px solid rgba(42,33,24,0.14); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 700; color: #8a7c66;">4 taburetes altos · Guatambú · Lustre natural</div>
+          </div>
+        </div>
+
+        <!-- PROYECTO 2 -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); background: #ece2cf; border: 1px solid rgba(42,33,24,0.08); border-radius: 12px; overflow: hidden; margin-bottom: 24px;">
+          <div style="padding: clamp(30px, 4vw, 54px); display: flex; flex-direction: column; justify-content: center; order: 2;">
+            <span style="font-size: 11px; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: #b9741f; margin-bottom: 14px;">Entrega · Comedor</span>
+            <h2 style="font-family: 'Spectral', serif; font-weight: 600; font-size: clamp(26px, 3vw, 36px); color: #21392c; margin: 0 0 16px; line-height: 1.08;">Mesa y sillas para el comedor diario</h2>
+            <p style="font-size: 15.5px; line-height: 1.75; color: #6b5f4e; margin: 0; max-width: 46ch;">Mesa rectangular con seis sillas a juego, en tono natural cálido. La pieza que reúne a la familia todos los días, pensada para acompañar generaciones. Entregada e instalada en el comedor del hogar.</p>
+            <div style="margin-top: 24px; padding-top: 18px; border-top: 1px solid rgba(42,33,24,0.14); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 700; color: #8a7c66;">Mesa + 6 sillas · Guatambú · Tono natural</div>
+          </div>
+          <div style="aspect-ratio: 4 / 3; min-height: 300px; background-image: url('assets/proyectos/comedor-mesa.png'); background-size: cover; background-position: center; background-color: #e9ddc9; order: 1;"></div>
+        </div>
+
+        <!-- MÁS TRABAJOS -->
+        <div style="text-align: center; max-width: 620px; margin: clamp(40px, 5vw, 64px) auto clamp(28px, 4vw, 40px);">
+          <span style="font-size: 11px; font-weight: 800; letter-spacing: 0.24em; text-transform: uppercase; color: #b9741f;">Más entregas</span>
+          <h2 style="font-family: 'Spectral', serif; font-weight: 600; font-size: clamp(24px, 3.2vw, 36px); color: #21392c; margin: 14px 0 12px; line-height: 1.1;">Seguimos sumando hogares</h2>
+          <p style="font-size: 15px; line-height: 1.65; color: #6b5f4e; margin: 0;">Familias que eligieron calidad para toda la vida. Ahora es tu turno.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px;">
+          <div style="aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background-color: #e6dcc8; border: 1px solid rgba(42,33,24,0.08); background-image: url('assets/proyectos/entrega-01.png'); background-size: cover; background-position: center;"></div>
+          <div style="aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background-color: #e6dcc8; border: 1px solid rgba(42,33,24,0.08); background-image: url('assets/proyectos/entrega-02.png'); background-size: cover; background-position: center;"></div>
+          <div style="aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background-color: #e6dcc8; border: 1px solid rgba(42,33,24,0.08); background-image: url('assets/proyectos/entrega-03.png'); background-size: cover; background-position: center;"></div>
+          <div style="aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background-color: #e6dcc8; border: 1px solid rgba(42,33,24,0.08); background-image: url('assets/proyectos/entrega-04.png'); background-size: cover; background-position: center;"></div>
+          <div style="aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background-color: #e6dcc8; border: 1px solid rgba(42,33,24,0.08); background-image: url('assets/proyectos/entrega-05.png'); background-size: cover; background-position: center;"></div>
+          <div style="aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background-color: #e6dcc8; border: 1px solid rgba(42,33,24,0.08); background-image: url('assets/proyectos/entrega-06.png'); background-size: cover; background-position: center;"></div>
+          <div style="aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background-color: #e6dcc8; border: 1px solid rgba(42,33,24,0.08); background-image: url('assets/proyectos/entrega-07.png'); background-size: cover; background-position: center;"></div>
+          <div style="aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background-color: #e6dcc8; border: 1px solid rgba(42,33,24,0.08); background-image: url('assets/proyectos/entrega-08.png'); background-size: cover; background-position: center;"></div>
+        </div>
+
+        <div style="margin-top: clamp(34px, 5vw, 54px); background: #ece0cd; border-radius: 12px; padding: clamp(30px, 4vw, 44px) clamp(28px, 5vw, 54px); display: flex; align-items: center; justify-content: space-between; gap: 28px; flex-wrap: wrap;">
+          <div>
+            <h2 style="font-family: 'Spectral', serif; font-weight: 600; font-size: clamp(22px, 2.6vw, 30px); color: #21392c; margin: 0 0 8px; line-height: 1.1;">¿Querés un mueble así en tu casa?</h2>
+            <p style="font-size: 15px; line-height: 1.6; color: #6b5f4e; margin: 0; max-width: 50ch;">Contanos qué estás buscando y lo fabricamos a tu medida.</p>
+          </div>
+          <a href="{{ waServicio }}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; background: #21392c; color: #f4ebdc; padding: 16px 32px; border-radius: 3px; font-weight: 800; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap;" style-hover="background: #172a20;"><span style="width: 9px; height: 9px; border-radius: 50%; background: #6fcf7f;"></span>Pedir presupuesto</a>
+        </div>
+      </div>
+    </section>
+  </div>
+  </sc-if>
+
+  <!-- ===================== CONTACTO ===================== -->
+  <sc-if value="{{ isContacto }}" hint-placeholder-val="{{ false }}">
+  <div>
+    <section style="background: #21392c;">
+      <div style="max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); align-items: stretch;">
+        <div style="padding: clamp(44px, 5vw, 76px) clamp(26px, 4vw, 56px); display: flex; flex-direction: column; justify-content: center;">
+          <span style="font-size: 12px; font-weight: 800; letter-spacing: 0.32em; text-transform: uppercase; color: #cf9a4a;">Estamos para ayudarte</span>
+          <h1 style="font-family: 'Spectral', serif; font-weight: 600; font-size: clamp(46px, 7vw, 74px); color: #f6efe1; margin: 14px 0 0; line-height: 1.0;">Contacto</h1>
+          <div style="display: flex; align-items: center; gap: 16px; margin: 24px 0 22px;">
+            <span style="height: 1px; width: clamp(60px, 9vw, 100px); background: rgba(244,235,220,0.38);"></span>
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#cf9a4a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"></path><path d="M3 11v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H7v-2a2 2 0 0 0-4 0z"></path><path d="M5 18v2"></path><path d="M19 18v2"></path></svg>
+            <span style="height: 1px; flex: 1; max-width: 130px; background: rgba(244,235,220,0.38);"></span>
+          </div>
+          <p style="font-size: 16px; line-height: 1.7; color: #cdd6c9; margin: 0; max-width: 46ch;">Escribinos por el medio que más te quede cómodo. Respondemos consultas sobre productos, medidas, tonos, restauraciones y entregas.</p>
+        </div>
+        
+      </div>
+    </section>
+
+    <section style="background: #f5efe2; padding: clamp(48px, 6vw, 84px) 24px;">
+      <div style="max-width: 1180px; margin: 0 auto;">
+
+        <p style="text-align: center; font-size: 12px; font-weight: 800; letter-spacing: 0.28em; text-transform: uppercase; color: #b9741f; margin: 0 0 30px;">Elegí cómo contactarnos</p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(232px, 1fr)); gap: 20px;">
+
+          <a href="{{ waMain }}" target="_blank" rel="noopener" style="background: #ece2cf; border: 1px solid rgba(42,33,24,0.07); border-radius: 10px; padding: 32px 24px; display: flex; flex-direction: column; align-items: center; text-align: center;" style-hover="border-color: #b9741f;">
+            <div style="width: 58px; height: 58px; border-radius: 50%; background: #e3d4ba; display: flex; align-items: center; justify-content: center; margin-bottom: 18px;"><svg viewBox="0 0 24 24" width="26" height="26" fill="#21392c"><path d="M17.47 14.38c-.3-.15-1.74-.86-2-.95-.27-.1-.46-.15-.66.14-.2.3-.76.95-.93 1.15-.17.2-.34.22-.63.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.34.44-.51.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.66-1.6-.9-2.18-.24-.57-.48-.5-.66-.5l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.74-.71 1.99-1.4.24-.69.24-1.28.17-1.4-.07-.13-.27-.2-.57-.35z M12 2a10 10 0 0 0-8.6 15.06L2 22l5.07-1.33A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.1.81.83-3.02-.2-.31A8.2 8.2 0 1 1 12 20.2z"></path></svg></div>
+            <span style="font-size: 11px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: #b9741f;">WhatsApp</span>
+            <div style="font-family: 'Spectral', serif; font-size: clamp(18px, 2vw, 22px); font-weight: 600; color: #21392c; margin: 10px 0 0;">+54 9 11 5870 5952</div>
+            <span style="width: 30px; height: 1px; background: rgba(42,33,24,0.18); margin: 16px 0;"></span>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #6b5f4e; margin: 0;">La forma más rápida de respondernos. Tocá para escribirnos.</p>
+          </a>
+
+          <a href="{{ telLink }}" style="background: #ece2cf; border: 1px solid rgba(42,33,24,0.07); border-radius: 10px; padding: 32px 24px; display: flex; flex-direction: column; align-items: center; text-align: center;" style-hover="border-color: #b9741f;">
+            <div style="width: 58px; height: 58px; border-radius: 50%; background: #e3d4ba; display: flex; align-items: center; justify-content: center; margin-bottom: 18px;"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#21392c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></div>
+            <span style="font-size: 11px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: #b9741f;">Teléfono</span>
+            <div style="font-family: 'Spectral', serif; font-size: clamp(18px, 2vw, 22px); font-weight: 600; color: #21392c; margin: 10px 0 0;">+54 9 11 5870 5952</div>
+            <span style="width: 30px; height: 1px; background: rgba(42,33,24,0.18); margin: 16px 0;"></span>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #6b5f4e; margin: 0;">Llamanos en nuestro horario de atención.</p>
+          </a>
+
+          <a href="{{ mailLink }}" style="background: #ece2cf; border: 1px solid rgba(42,33,24,0.07); border-radius: 10px; padding: 32px 24px; display: flex; flex-direction: column; align-items: center; text-align: center;" style-hover="border-color: #b9741f;">
+            <div style="width: 58px; height: 58px; border-radius: 50%; background: #e3d4ba; display: flex; align-items: center; justify-content: center; margin-bottom: 18px;"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#21392c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 5L2 7"></path></svg></div>
+            <span style="font-size: 11px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: #b9741f;">Email</span>
+            <div style="font-family: 'Spectral', serif; font-size: 16px; font-weight: 600; color: #21392c; margin: 10px 0 0; word-break: break-word;">adangusmuebles@outlook.com</div>
+            <span style="width: 30px; height: 1px; background: rgba(42,33,24,0.18); margin: 16px 0;"></span>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #6b5f4e; margin: 0;">Para consultas más detalladas o presupuestos.</p>
+          </a>
+
+          <div style="background: #ece2cf; border: 1px solid rgba(42,33,24,0.07); border-radius: 10px; padding: 32px 24px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div style="width: 58px; height: 58px; border-radius: 50%; background: #e3d4ba; display: flex; align-items: center; justify-content: center; margin-bottom: 18px;"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#21392c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
+            <span style="font-size: 11px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: #b9741f;">Ubicación</span>
+            <div style="font-family: 'Spectral', serif; font-size: clamp(18px, 2vw, 22px); font-weight: 600; color: #21392c; margin: 10px 0 0;">Morón</div>
+            <span style="width: 30px; height: 1px; background: rgba(42,33,24,0.18); margin: 16px 0;"></span>
+            <p style="font-size: 13.5px; line-height: 1.55; color: #6b5f4e; margin: 0;">Provincia de Buenos Aires, Argentina.</p>
+          </div>
+
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 24px; margin-top: clamp(28px, 4vw, 40px);">
+
+          <form onSubmit="{{ onContactSubmit }}" style="background: #ece2cf; border: 1px solid rgba(42,33,24,0.07); border-radius: 12px; padding: clamp(28px, 3.4vw, 40px);">
+            <span style="font-size: 12px; font-weight: 800; letter-spacing: 0.22em; text-transform: uppercase; color: #b9741f;">Envianos tu consulta</span>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 14px; margin-top: 20px;">
+              <input name="nombre" placeholder="Nombre y apellido" style="background: #f6f0e4; border: 1px solid rgba(42,33,24,0.16); border-radius: 6px; padding: 13px 15px; font: inherit; font-size: 14px; color: #2a2118; outline: none; width: 100%;" style-focus="border-color: #b9741f;">
+              <input name="email" type="email" placeholder="Email" style="background: #f6f0e4; border: 1px solid rgba(42,33,24,0.16); border-radius: 6px; padding: 13px 15px; font: inherit; font-size: 14px; color: #2a2118; outline: none; width: 100%;" style-focus="border-color: #b9741f;">
+            </div>
+            <input name="asunto" placeholder="Asunto" style="background: #f6f0e4; border: 1px solid rgba(42,33,24,0.16); border-radius: 6px; padding: 13px 15px; font: inherit; font-size: 14px; color: #2a2118; outline: none; width: 100%; margin-top: 14px;" style-focus="border-color: #b9741f;">
+            <textarea name="mensaje" rows="5" placeholder="Mensaje" style="background: #f6f0e4; border: 1px solid rgba(42,33,24,0.16); border-radius: 6px; padding: 13px 15px; font: inherit; font-size: 14px; color: #2a2118; outline: none; width: 100%; margin-top: 14px; resize: vertical;" style-focus="border-color: #b9741f;"></textarea>
+            <button type="submit" style="display: inline-flex; align-items: center; gap: 10px; background: #21392c; color: #f4ebdc; padding: 15px 28px; border: none; border-radius: 4px; font-weight: 800; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer; margin-top: 20px;" style-hover="background: #172a20;"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4 20-7z"></path><path d="M22 2 11 13"></path></svg>Enviar mensaje</button>
+            <p style="font-size: 13px; color: #6b5f4e; margin: 14px 0 0;">Te responderemos a la brevedad.</p>
+          </form>
+
+          <div style="background: #ece2cf; border: 1px solid rgba(42,33,24,0.07); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">
+            <div style="aspect-ratio: 16 / 9; background-image: url('assets/services/contacto.png'); background-size: cover; background-position: center; background-color: #e9ddc9;"></div>
+            <div style="padding: clamp(26px, 3vw, 36px);">
+              <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
+                <div style="flex: 0 0 auto; width: 50px; height: 50px; border-radius: 50%; background: #e3d4ba; display: flex; align-items: center; justify-content: center;"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#21392c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
+                <h3 style="font-family: 'Spectral', serif; font-weight: 600; font-size: clamp(22px, 2.6vw, 28px); color: #21392c; margin: 0; line-height: 1.12;">Detrás de cada pieza,<br>hay dedicación</h3>
+              </div>
+              <p style="font-size: 15px; line-height: 1.7; color: #6b5f4e; margin: 0;">Nos tomamos el tiempo de escuchar cada consulta y ofrecerte la mejor solución para tu mueble.</p>
+              <div style="margin-top: 22px; padding-top: 20px; border-top: 1px solid rgba(42,33,24,0.12);">
+                <span style="font-size: 11px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: #b9741f;">Horarios de atención</span>
+                <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 14px; margin-top: 14px;">
+                  <span style="font-weight: 700; color: #21392c; font-size: 13.5px; white-space: nowrap;">Lunes a Viernes</span>
+                  <span style="color: #6b5f4e; font-size: 13px; text-align: right;">10:30–13:00 · 15:30–19:00</span>
+                </div>
+                <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 14px; margin-top: 11px;">
+                  <span style="font-weight: 700; color: #21392c; font-size: 13.5px; white-space: nowrap;">Sábados</span>
+                  <span style="color: #6b5f4e; font-size: 13px; text-align: right;">10:30–13:30</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="margin-top: clamp(28px, 4vw, 40px); background: #ece2cf; border: 1px solid rgba(42,33,24,0.07); border-radius: 12px; padding: clamp(24px, 3vw, 32px) clamp(28px, 4vw, 44px); display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;">
+          <div style="display: flex; align-items: center; gap: 18px;">
+            <div style="flex: 0 0 auto; width: 52px; height: 52px; border-radius: 50%; background: #e3d4ba; display: flex; align-items: center; justify-content: center;"><svg viewBox="0 0 24 24" width="24" height="24" fill="#21392c"><path d="M17.47 14.38c-.3-.15-1.74-.86-2-.95-.27-.1-.46-.15-.66.14-.2.3-.76.95-.93 1.15-.17.2-.34.22-.63.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.34.44-.51.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.66-1.6-.9-2.18-.24-.57-.48-.5-.66-.5l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.74-.71 1.99-1.4.24-.69.24-1.28.17-1.4-.07-.13-.27-.2-.57-.35z M12 2a10 10 0 0 0-8.6 15.06L2 22l5.07-1.33A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.1.81.83-3.02-.2-.31A8.2 8.2 0 1 1 12 20.2z"></path></svg></div>
+            <div>
+              <h3 style="font-family: 'Spectral', serif; font-weight: 600; font-size: clamp(19px, 2.2vw, 24px); color: #21392c; margin: 0 0 4px; line-height: 1.1;">¿Preferís escribirnos ahora?</h3>
+              <p style="font-size: 14px; line-height: 1.5; color: #6b5f4e; margin: 0;">Chateá con nosotros por WhatsApp y te ayudamos al instante.</p>
+            </div>
+          </div>
+          <a href="{{ waMain }}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; background: #21392c; color: #f4ebdc; padding: 16px 30px; border-radius: 4px; font-weight: 800; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap;" style-hover="background: #172a20;"><span style="width: 9px; height: 9px; border-radius: 50%; background: #6fcf7f;"></span>Escribir por WhatsApp</a>
+        </div>
+
+      </div>
+    </section>
+  </div>
+  </sc-if>
+
+  </main>
+
+  <!-- ===================== LIGHTBOX ===================== -->
+  <sc-if value="{{ lightboxOpen }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ closeLightbox }}" style="position: fixed; inset: 0; z-index: 100; background: rgba(24,42,32,0.84); backdrop-filter: blur(5px); display: flex; align-items: center; justify-content: center; padding: clamp(20px, 5vw, 56px); animation: adFade .22s ease;">
+    <div onClick="{{ stopProp }}" style="position: relative; max-width: 660px; width: 100%; background: #faf4e9; border-radius: 5px; overflow: hidden; box-shadow: 0 30px 70px rgba(0,0,0,0.45);">
+      <button onClick="{{ closeLightbox }}" aria-label="Cerrar" style="position: absolute; top: 14px; right: 14px; z-index: 2; width: 44px; height: 44px; border-radius: 50%; background: rgba(33,57,44,0.9); color: #f4ebdc; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 14px rgba(0,0,0,0.3);" style-hover="background: #b9741f;">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"></path></svg>
+      </button>
+      <div role="img" aria-label="{{ lightboxName }}" style="{{ lightboxImgStyle }}"></div>
+      <div style="padding: 16px 24px 20px;">
+        <span style="font-family: 'Spectral', serif; font-size: 22px; font-weight: 600; color: #21392c;">{{ lightboxName }}</span>
+      </div>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer style="background: #182a20; color: #cdd6c9; padding: clamp(48px, 6vw, 72px) 24px 32px;">
+    <div style="max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px;">
+      <div>
+        <div style="display: flex; align-items: center; margin-bottom: 18px;">
+          <img src="assets/logo-footer.png" alt="ADANGUS Muebles" style="height: 64px; width: auto; object-fit: contain; display: block;">
+        </div>
+        <p style="font-size: 14px; line-height: 1.7; color: #9fb0a2; margin: 0; max-width: 32ch;">Muebles de madera real, hechos para durar generaciones.</p>
+      </div>
+
+      <div>
+        <h4 style="font-size: 11px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: #cf9a4a; margin: 0 0 16px;">Navegación</h4>
+        <div style="display: flex; flex-direction: column; gap: 11px;">
+          <button onClick="{{ goInicio }}" style="background: none; border: none; color: #cdd6c9; font-size: 14px; cursor: pointer; padding: 0; text-align: left;" style-hover="color: #f6efe1;">Inicio</button>
+          <button onClick="{{ goProductos }}" style="background: none; border: none; color: #cdd6c9; font-size: 14px; cursor: pointer; padding: 0; text-align: left;" style-hover="color: #f6efe1;">Productos</button>
+          <button onClick="{{ goServicios }}" style="background: none; border: none; color: #cdd6c9; font-size: 14px; cursor: pointer; padding: 0; text-align: left;" style-hover="color: #f6efe1;">Servicios</button>
+          <button onClick="{{ goProyectos }}" style="background: none; border: none; color: #cdd6c9; font-size: 14px; cursor: pointer; padding: 0; text-align: left;" style-hover="color: #f6efe1;">Proyectos</button>
+          <button onClick="{{ goContacto }}" style="background: none; border: none; color: #cdd6c9; font-size: 14px; cursor: pointer; padding: 0; text-align: left;" style-hover="color: #f6efe1;">Contacto</button>
+        </div>
+      </div>
+
+      <div>
+        <h4 style="font-size: 11px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: #cf9a4a; margin: 0 0 16px;">Contacto</h4>
+        <div style="display: flex; flex-direction: column; gap: 11px; font-size: 14px;">
+          <a href="{{ waMain }}" target="_blank" rel="noopener" style="color: #cdd6c9;" style-hover="color: #f6efe1;">WhatsApp · +54 9 11 5870 5952</a>
+          <a href="{{ mailLink }}" style="color: #cdd6c9; word-break: break-word;" style-hover="color: #f6efe1;">adangusmuebles@outlook.com</a>
+          <span style="color: #9fb0a2;">Morón, Buenos Aires</span>
+        </div>
+      </div>
+
+      <div>
+        <h4 style="font-size: 11px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: #cf9a4a; margin: 0 0 16px;">Horarios</h4>
+        <div style="font-size: 14px; line-height: 1.7; color: #9fb0a2;">
+          <div>Lun a Vie · 10:30–13 / 15:30–19</div>
+          <div>Sábados · 10:30–13:30</div>
+        </div>
+      </div>
+    </div>
+    <div style="max-width: 1180px; margin: 44px auto 0; padding-top: 24px; border-top: 1px solid rgba(244,235,220,0.12); font-size: 12.5px; color: #7f9184;">© 2026 ADANGUS Muebles · Morón, Buenos Aires, Argentina</div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = (() => {
+    const valid = ['inicio', 'productos', 'servicios', 'proyectos', 'contacto'];
+    let p = 'inicio';
+    try { const h = (location.hash || '').replace(/^#/, ''); if (valid.indexOf(h) !== -1) p = h; } catch (e) {}
+    return { page: p, filter: 'Todos', lightbox: null };
+  })();
+
+  componentDidMount() {
+    this._syncSpacer = () => {
+      const h = document.querySelector('header');
+      const sp = document.getElementById('ad-header-spacer');
+      if (h && sp) sp.style.height = h.offsetHeight + 'px';
+    };
+    this._onKey = (e) => { if (e.key === 'Escape' && this.state.lightbox) this.setState({ lightbox: null }); };
+    this._onHash = () => {
+      const valid = ['inicio', 'productos', 'servicios', 'proyectos', 'contacto'];
+      const h = (location.hash || '').replace(/^#/, '');
+      const p = valid.indexOf(h) !== -1 ? h : 'inicio';
+      if (p !== this.state.page) this.setState({ page: p });
+    };
+    this._syncSpacer();
+    setTimeout(this._syncSpacer, 250);
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', this._syncSpacer);
+      window.addEventListener('keydown', this._onKey);
+      window.addEventListener('hashchange', this._onHash);
+      // ensure the URL reflects the section shown on first load
+      try { if ((location.hash || '').replace(/^#/, '') !== this.state.page) location.replace('#' + this.state.page); } catch (e) {}
+    }
+  }
+
+  componentDidUpdate() {
+    if (this._syncSpacer) this._syncSpacer();
+  }
+
+  componentWillUnmount() {
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('resize', this._syncSpacer);
+      window.removeEventListener('keydown', this._onKey);
+      window.removeEventListener('hashchange', this._onHash);
+    }
+  }
+
+  wa(text) {
+    const base = 'https://wa.me/5491158705952';
+    return text ? base + '?text=' + encodeURIComponent(text) : base;
+  }
+
+  go(page, filter) {
+    const next = { page };
+    if (filter) next.filter = filter;
+    this.setState(next);
+    if (typeof window !== 'undefined') {
+      try { if ((location.hash || '').replace(/^#/, '') !== page) location.hash = '#' + page; } catch (e) {}
+      window.scrollTo({ top: 0, behavior: 'auto' });
+    }
+  }
+
+  renderVals() {
+    const page = this.state.page;
+    const filter = this.state.filter;
+
+    // ---- Header nav ----
+    const navDef = [
+      { label: 'Inicio', page: 'inicio' },
+      { label: 'Productos', page: 'productos' },
+      { label: 'Servicios', page: 'servicios' },
+      { label: 'Proyectos', page: 'proyectos' },
+      { label: 'Contacto', page: 'contacto' },
+    ];
+    const navItems = navDef.map(n => ({
+      label: n.label,
+      onClick: () => this.go(n.page),
+      style: 'background: none; border: none; cursor: pointer; padding: 9px 13px; font-weight: 700; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: ' +
+        (page === n.page ? '#b9741f' : '#41382b') + ';',
+    }));
+
+    // ---- Valores ----
+    const valores = [
+      { num: '01', title: 'Madera real', text: 'Todos nuestros trabajos se realizan en madera de guatambú, una de las más resistentes y duraderas.' },
+      { num: '02', title: 'Terminación a mano', text: 'El cuidado artesanal se refleja en cada detalle, desde el lijado hasta el acabado final.' },
+      { num: '03', title: 'Diseño que no caduca', text: 'Líneas clásicas y atemporales que conservan su estilo y elegancia a lo largo de los años.' },
+      { num: '04', title: 'Para toda la vida', text: 'Muebles fabricados para acompañar generaciones, combinando resistencia, funcionalidad y belleza duradera.' },
+    ];
+
+    // ---- Servicios ----
+    const servicios = [
+      { num: '01', title: 'Restauración', img: 'assets/services/restauracion.png', short: 'Piezas antiguas o heredadas, como nuevas.', text: 'Devolvemos a la vida piezas antiguas o heredadas, respetando su carácter original.' },
+      { num: '02', title: 'Reparaciones', img: 'assets/services/reparaciones.png', short: 'Partes rotas, flojas o faltantes.', text: 'Arreglamos partes rotas, flojas o faltantes para que el mueble vuelva a ser firme y seguro.' },
+      { num: '03', title: 'Encolado', img: 'assets/services/encolado.png', short: 'Uniones firmes, estructura sólida.', text: 'Reencolado de uniones y estructuras para recuperar la solidez de la pieza.' },
+      { num: '04', title: 'Lustrado', img: 'assets/services/lustrado.png', short: 'Realza y protege la veta.', text: 'Lustre y terminación que realza la veta de la madera y la protege con el tiempo.' },
+      { num: '05', title: 'Tapizado', img: 'assets/services/tapizado.png', short: 'Telas a elección, a medida.', text: 'Renovamos asientos y respaldos con telas a elección, prolijos y a medida.' },
+      { num: '06', title: 'Pintado', img: 'assets/services/pintado.png', short: 'El color que imagines, parejo.', text: 'Pintura y acabados en el color que imagines, con una terminación pareja y cuidada.' },
+    ];
+
+    // ---- Proyectos (galería) ----
+    const proyectos = [
+      { img: 'assets/services/reparaciones.png', title: 'Reparación de estructura', desc: 'Encastres reforzados para devolverle firmeza y seguridad al mueble.' },
+      { img: 'assets/services/encolado.png', title: 'Encolado de uniones', desc: 'Reencolado de espigas y largueros para una base sólida y duradera.' },
+      { img: 'assets/services/lustrado.png', title: 'Lustrado a mano', desc: 'Terminación que realza la veta y protege la madera con el tiempo.' },
+      { img: 'assets/services/tapizado.png', title: 'Tapizado a medida', desc: 'Asientos y respaldos renovados con telas a elección, prolijos y firmes.' },
+      { img: 'assets/services/pintado.png', title: 'Pintado y acabado', desc: 'Color parejo y acabado cuidado sobre madera maciza.' },
+    ];
+
+    // ---- Productos ----
+    const raw = [
+      { cat: 'Sillas', name: 'Silla Fede', price: 235000, finish: 'Nogal', img: 'assets/silla-fede.jpeg', desc: 'Respaldo de husos torneados a mano y asiento de guarda esculpida. Líneas finas y sobrias.' },
+      { cat: 'Sillas', name: 'Silla Fede Torneados Lisos', price: 235000, finish: 'Natural', img: 'assets/silla-fede-lisos.png', desc: 'La Fede con husos lisos y crestón recto. Sencilla, sólida y luminosa.' },
+      { cat: 'Sillas', name: 'Silla Windsor', price: 265000, finish: 'Natural', img: 'assets/silla-windsor.jpeg', desc: 'El clásico respaldo en arco con husos finos. Asiento amplio y contorneado al cuerpo.' },
+      { cat: 'Sillas', name: 'Silla Windsor Americana', price: 265000, finish: 'Nogal', img: 'assets/silla-windsor-americana.png', desc: 'Respaldo en abanico con crestón y husos torneados. El Windsor de líneas americanas.' },
+      { cat: 'Sillas', name: 'Silla Windsor Torneados Lisos', price: 260000, finish: 'Natural', img: 'assets/silla-windsor-lisos.png', desc: 'El arco Windsor con husos lisos. Asiento contorneado y terminación natural.' },
+      { cat: 'Sillas', name: 'Silla London', price: 290000, finish: 'Nogal', img: 'assets/silla-london.png', desc: 'Respaldo en arco Windsor con husos finos y crucetas bajas. Elegante y resistente.' },
+      { cat: 'Sillas', name: 'Silla Loren', price: 235000, finish: 'Nogal', img: 'assets/silla-loren.png', desc: 'Respaldo de husos torneados y crestón curvo. Un clásico sobrio para la mesa diaria.' },
+      { cat: 'Sillas', name: 'Silla Loren Torneados Lisos', price: 235000, finish: 'Natural', img: 'assets/silla-loren-lisos.png', desc: 'La Loren con husos lisos y crestón curvo. Líneas limpias en madera maciza.' },
+      { cat: 'Sillas', name: 'Silla Boston', price: 320000, finish: 'Nogal', img: 'assets/silla-boston.png', desc: 'Respaldo capitán bajo con husos torneados y crestón envolvente. Sólida y confortable.' },
+      { cat: 'Sillas', name: 'Silla Novo', price: 280000, finish: 'Nogal', img: 'assets/silla-novo.png', desc: 'Husos en abanico y crestón curvado, de aire más moderno. Madera maciza lustrada.' },
+      { cat: 'Sillones', name: 'Sillón Windsor', price: 398000, finish: 'Nogal', img: 'assets/sillon-windsor.jpeg', desc: 'Versión con apoyabrazos del clásico Windsor. Respaldo en arco alto, ideal cabecera.' },
+      { cat: 'Sillones', name: 'Sillón Novo', price: 420000, finish: 'Natural', img: 'assets/sillon-novo.jpeg', desc: 'Sillón de cabecera con husos en abanico y apoyabrazos. Terminación natural luminosa.' },
+      { cat: 'Sillones', name: 'Sillón Boston', price: 480000, finish: 'Nogal', img: 'assets/sillon-boston.jpeg', desc: 'Silla de cabecera estilo capitán, con crestón envolvente y husos torneados.' },
+      { cat: 'Sillones', name: 'Sillón Fede', price: 355000, finish: 'Nogal', img: 'assets/cabecero-fede.png', desc: 'Sillón de cabecera Fede con apoyabrazos y husos torneados. Presencia a la cabecera de la mesa.' },
+      { cat: 'Sillones', name: 'Sillón Fede Torneados Lisos', price: 355000, finish: 'Natural', img: 'assets/cabecero-fede-lisos.png', desc: 'El sillón Fede con husos lisos y apoyabrazos. Madera maciza en tono natural.' },
+      { cat: 'Sillones', name: 'Sillón London', price: 435000, finish: 'Nogal', img: 'assets/cabecero-london.png', desc: 'Sillón de cabecera en arco Windsor alto con apoyabrazos. Amplio y envolvente.' },
+      { cat: 'Sillones', name: 'Sillón Windsor Americano', price: 398000, finish: 'Nogal', img: 'assets/cabecero-windsor-americano.png', desc: 'Sillón en abanico con crestón y apoyabrazos torneados. Robusto y clásico.' },
+      { cat: 'Sillones', name: 'Sillón Windsor Torneados Lisos', price: 390000, finish: 'Natural', img: 'assets/cabecero-windsor-lisos.png', desc: 'El arco Windsor con apoyabrazos y husos lisos. Liviano a la vista, firme al uso.' },
+      { cat: 'Mecedoras', name: 'Mecedora Americana Alta', price: 500000, finish: 'Nogal', img: 'assets/mecedora-americana.jpeg', desc: 'Respaldo alto con husos torneados y apoyabrazos. El confort de toda la vida.' },
+      { cat: 'Mecedoras', name: 'Mecedora Windsor', price: 450000, finish: 'Natural', img: 'assets/mecedora-windsor.jpeg', desc: 'Mecedora con respaldo en arco Windsor y apoyabrazos torneados. Equilibrio perfecto.' },
+      { cat: 'Mecedoras', name: 'Mecedora Windsor Baja', price: 450000, finish: 'Nogal', img: 'assets/mecedora-windsor-baja.png', desc: 'Mecedora de respaldo Windsor bajo con apoyabrazos. El descanso de siempre, en madera maciza.' },
+      { cat: 'Taburetes', name: 'Taburete Boston', price: 390000, finish: 'Natural', img: 'assets/banqueta-boston.jpeg', desc: 'Taburete alto estilo capitán para barra o desayunador. Patas torneadas firmes.' },
+      { cat: 'Taburetes', name: 'Taburete Fede', price: 315000, finish: 'Nogal', img: 'assets/banqueta-fede.jpeg', desc: 'Taburete alto con husos torneados. Ideal para isla, barra o ambientes altos.' },
+      { cat: 'Taburetes', name: 'Taburete Fede Torneados Lisos', price: 315000, finish: 'Natural', img: 'assets/taburete-fede-lisos.png', desc: 'Taburete alto Fede con husos lisos. Liviano y firme para ambientes altos.' },
+      { cat: 'Taburetes', name: 'Taburete Loren', price: 315000, finish: 'Nogal', img: 'assets/taburete-loren.png', desc: 'Taburete alto Loren con husos torneados y apoyapiés. Ideal para barra o desayunador.' },
+      { cat: 'Mesas', name: 'Mesa Redonda 1,20', price: 660000, finish: 'Natural', img: 'assets/mesa-redonda.jpeg', desc: 'Mesa redonda de 1,20 m de diámetro. Tapa maciza y patas torneadas.' },
+      { cat: 'Mesas', name: 'Mesa Rectangular 1,40 × 0,80', price: 660000, finish: 'Natural', img: 'assets/mesa-rect-140.jpeg', desc: 'Mesa rectangular de 1,40 × 0,80 m. Para cuatro a seis comensales.' },
+      { cat: 'Mesas', name: 'Mesa Rectangular 1,60 × 0,80', price: 710000, finish: 'Natural', img: 'assets/mesa-rect-160.jpeg', desc: 'Mesa rectangular de 1,60 × 0,80 m. Amplia y firme, para seis comensales.' },
+      { cat: 'Niños', name: 'Mesita Infantil', price: 150000, finish: 'Blanco', img: 'assets/mesita-ninos.png', desc: 'Mesita baja de madera, a la medida de los más chicos. Robusta y segura. Combo mesita + 2 sillitas $420.000.' },
+      { cat: 'Niños', name: 'Sillita Windsor Niños', price: 162000, finish: 'Natural', img: 'assets/sillita-windsor-natural.png', desc: 'Versión pequeña del Windsor, con asiento macizo y husos torneados. Lustre natural.' },
+      { cat: 'Niños', name: 'Sillita Herradura', price: 145000, finish: 'Blanco', img: 'assets/sillita-herradura.png', desc: 'Sillita infantil de respaldo herradura envolvente, pintada. Segura y resistente para los más chicos.' },
+      { cat: 'Niños', name: 'Sillita Fede Niños', price: 120000, finish: 'Blanco', img: 'assets/sillita-fede-ninos.png', desc: 'Sillita de líneas simples y sólidas, pensada para el uso diario de los niños.' },
+    ];
+    const lustreImg = {
+      'Natural': 'assets/lustres/natural.png',
+      'Cedro': 'assets/lustres/cedro.png',
+      'Nogal': 'assets/lustres/nogal.png',
+      'Blanco': 'assets/lustres/blanco.png',
+      'Negro': 'assets/lustres/negro.png',
+    };
+    const clean = (s) => 'assets/card/' + s.split('/').pop().replace(/\.(jpe?g|png)$/i, '.png') + '?v=12';
+    const fmtPrice = (n) => '$' + n.toLocaleString('es-AR');
+    const products = raw.map(p => {
+      const img = clean(p.img);
+      return {
+        ...p,
+        img,
+        priceFmt: p.price == null ? 'A consultar' : fmtPrice(p.price),
+        finishDot: "width: 15px; height: 15px; border-radius: 50%; display: inline-block; flex: 0 0 auto; background-image: url('" + (lustreImg[p.finish] || lustreImg.Natural) + "'); background-size: cover; background-position: center; border: 1px solid rgba(42,33,24,0.28);",
+        wa: this.wa('Hola ADANGUS, quiero consultar por ' + p.name + (p.price == null ? '' : ' (' + fmtPrice(p.price) + ')') + '. ¿Está disponible y en qué lustres?'),
+        openImg: () => this.setState({ lightbox: { img, name: p.name } }),
+      };
+    });
+    const filtered = filter === 'Todos' ? products : products.filter(p => p.cat === filter);
+
+    // ---- Filtros ----
+    const cats = ['Todos', 'Sillas', 'Sillones', 'Mecedoras', 'Taburetes', 'Mesas', 'Niños'];
+    const catList = cats.map(c => {
+      const active = c === filter;
+      return {
+        label: c,
+        onClick: () => this.setState({ filter: c }),
+        style: 'cursor: pointer; padding: 10px 20px; border-radius: 2px; font-weight: 700; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; transition: all .15s; ' +
+          (active
+            ? 'background: #21392c; color: #f4ebdc; border: 1px solid #21392c;'
+            : 'background: transparent; color: #5f5446; border: 1px solid rgba(42,33,24,0.22);'),
+      };
+    });
+
+    // ---- Home category cards ----
+    const catCards = [
+      { name: 'Sillas', img: 'assets/silla-windsor.jpeg', cat: 'Sillas' },
+      { name: 'Sillones', img: 'assets/sillon-windsor.jpeg', cat: 'Sillones' },
+      { name: 'Mecedoras', img: 'assets/mecedora-americana.jpeg', cat: 'Mecedoras' },
+      { name: 'Taburetes', img: 'assets/banqueta-fede.jpeg', cat: 'Taburetes' },
+      { name: 'Mesas', img: 'assets/mesa-redonda.jpeg', cat: 'Mesas' },
+      { name: 'Niños', img: 'assets/sillita-windsor-ninos.png', cat: 'Niños' },
+    ].map(c => ({ ...c, img: clean(c.img), onClick: () => this.go('productos', c.cat) }));
+
+    // ---- Lustres / terminaciones a elección ----
+    const swBorder = '1px solid rgba(42,33,24,0.28)';
+    const lustres = [
+      { name: 'Natural', img: 'assets/lustres/natural.png' },
+      { name: 'Cedro', img: 'assets/lustres/cedro.png' },
+      { name: 'Nogal', img: 'assets/lustres/nogal.png' },
+      { name: 'Blanco', img: 'assets/lustres/blanco.png' },
+      { name: 'Negro', img: 'assets/lustres/negro.png' },
+    ].map(l => ({
+      name: l.name,
+      dot: "width: 14px; height: 14px; border-radius: 50%; display: inline-block; flex: 0 0 auto; background-image: url('" + l.img + "'); background-size: cover; background-position: center; border: " + swBorder + ";",
+      swatch: "width: 42px; height: 42px; border-radius: 50%; display: block; background-image: url('" + l.img + "'); background-size: cover; background-position: center; border: " + swBorder + "; box-shadow: 0 2px 6px rgba(42,33,24,0.12);",
+    }));
+
+    return {
+      isInicio: page === 'inicio',
+      isProductos: page === 'productos',
+      isServicios: page === 'servicios',
+      isProyectos: page === 'proyectos',
+      isContacto: page === 'contacto',
+      lightboxOpen: !!this.state.lightbox,
+      lightboxName: this.state.lightbox ? this.state.lightbox.name : '',
+      lightboxImgStyle: this.state.lightbox
+        ? "width: 100%; height: min(74vh, 620px); background-image: url('" + this.state.lightbox.img + "'); background-size: contain; background-repeat: no-repeat; background-position: center; background-color: #e9ddc9;"
+        : "width: 100%; height: 0;",
+      closeLightbox: () => this.setState({ lightbox: null }),
+      stopProp: (e) => e.stopPropagation(),
+      navItems,
+      valores,
+      servicios,
+      proyectos,
+      products,
+      filtered,
+      catList,
+      catCards,
+      lustres,
+      waMain: this.wa('Hola ADANGUS, quería hacerles una consulta.'),
+      waServicio: this.wa('Hola ADANGUS, quería consultar por un trabajo de restauración / reparación.'),
+      telLink: 'tel:+5491158705952',
+      mailLink: 'mailto:adangusmuebles@outlook.com',
+      goInicio: () => this.go('inicio'),
+      goProductos: () => this.go('productos'),
+      goServicios: () => this.go('servicios'),
+      goProyectos: () => this.go('proyectos'),
+      goContacto: () => this.go('contacto'),
+      onContactSubmit: (e) => {
+        e.preventDefault();
+        const f = e.target;
+        const get = (n) => ((f[n] && f[n].value) || '').trim();
+        const nombre = get('nombre'), email = get('email'), asunto = get('asunto'), mensaje = get('mensaje');
+        let t = 'Hola ADANGUS, quería hacerles una consulta.';
+        if (nombre || asunto || mensaje) {
+          t = 'Hola ADANGUS, soy ' + (nombre || '(sin nombre)') + '.';
+          if (asunto) t += ' Asunto: ' + asunto + '.';
+          if (mensaje) t += ' ' + mensaje;
+          if (email) t += ' (Email: ' + email + ')';
+        }
+        if (typeof window !== 'undefined') window.open(this.wa(t), '_blank');
+      },
+    };
+  }
+}
+</script>
+</body>
+</html>
