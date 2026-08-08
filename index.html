@@ -25,19 +25,73 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1560861675538252&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
- <!-- Evento Contact al hacer clic en WhatsApp -->
+<!-- Evento Contact al abrir WhatsApp -->
 <script>
-document.addEventListener('click', function (event) {
-  const whatsappLink = event.target.closest(
-    'a[href*="wa.me"], a[href*="api.whatsapp.com"], a[href*="whatsapp.com"]'
-  );
+(function () {
+  let contactSent = false;
 
-  if (!whatsappLink) return;
+  function trackWhatsAppContact() {
+    if (contactSent) return;
 
-  if (typeof fbq === 'function') {
-    fbq('track', 'Contact');
+    if (typeof fbq === 'function') {
+      fbq('track', 'Contact');
+      contactSent = true;
+
+      setTimeout(function () {
+        contactSent = false;
+      }, 2000);
+    }
   }
-}, true);
+
+  function isWhatsAppUrl(url) {
+    if (!url) return false;
+
+    return (
+      url.includes('wa.me') ||
+      url.includes('api.whatsapp.com') ||
+      url.includes('web.whatsapp.com') ||
+      url.includes('whatsapp://')
+    );
+  }
+
+  document.addEventListener('click', function (event) {
+    const element = event.target.closest(
+      'a[href], button, [role="button"]'
+    );
+
+    if (!element) return;
+
+    const href =
+      element.getAttribute('href') ||
+      element.dataset.href ||
+      element.dataset.url ||
+      '';
+
+    if (isWhatsAppUrl(href)) {
+      trackWhatsAppContact();
+    }
+  }, true);
+
+  const originalWindowOpen = window.open;
+
+  window.open = function (url) {
+    if (isWhatsAppUrl(String(url || ''))) {
+      trackWhatsAppContact();
+    }
+
+    return originalWindowOpen.apply(window, arguments);
+  };
+
+  const originalAnchorClick = HTMLAnchorElement.prototype.click;
+
+  HTMLAnchorElement.prototype.click = function () {
+    if (isWhatsAppUrl(this.href)) {
+      trackWhatsAppContact();
+    }
+
+    return originalAnchorClick.apply(this, arguments);
+  };
+})();
 </script>
 </head>
 <body>
